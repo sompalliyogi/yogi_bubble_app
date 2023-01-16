@@ -1,0 +1,44 @@
+let firstBubble = document.getElementById("firstBubble");
+let secondBubble = document.getElementById("secondBubble");
+let thirdBubble = document.getElementById("thirdBubble");
+let fourthBubble = document.getElementById("fourthBubble");
+
+let firstBubbleContainer = document.getElementById("firstBubbleContainer");
+let secondBubbleContainer = document.getElementById("secondBubbleContainer");
+let thirdBubbleContainer = document.getElementById("thirdBubbleContainer");
+let fourthBubbleContainer = document.getElementById("fourthBubbleContainer");
+
+let resetButton = document.getElementById("reset");
+
+firstBubble.addEventListener("click", () => {
+    firstBubbleContainer.style.justifyContent = "flex-start";
+    firstBubble.style.backgroundColor = "silver";
+});
+
+secondBubble.addEventListener("click", () => {
+    secondBubbleContainer.style.justifyContent = "flex-start";
+    secondBubble.style.backgroundColor = "silver";
+})
+
+thirdBubble.addEventListener("click", () => {
+    thirdBubbleContainer.style.justifyContent = "flex-start";
+    thirdBubble.style.backgroundColor = "silver";
+})
+
+fourthBubble.addEventListener("click", () => {
+    fourthBubbleContainer.style.justifyContent = "flex-start";
+    fourthBubble.style.backgroundColor = "silver";
+})
+
+
+
+resetButton.addEventListener("click", () => {
+    firstBubbleContainer.style.justifyContent = "space-between";
+    firstBubble.style.backgroundColor = "yellow";
+    secondBubbleContainer.style.justifyContent = "space-between";
+    secondBubble.style.backgroundColor = "blue";
+    thirdBubbleContainer.style.justifyContent = "space-between";
+    thirdBubble.style.backgroundColor = "red";
+    fourthBubbleContainer.style.justifyContent = "space-between";
+    fourthBubble.style.backgroundColor = "green";
+});
